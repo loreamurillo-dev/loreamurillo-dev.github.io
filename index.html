@@ -189,12 +189,20 @@
 
     .badge svg{opacity:.9}
 
-    .summary{
-      margin-top: 18px;
-      color: var(--text);
-      font-size: 15px;
-      line-height: 1.7;
-    }
+   .summary{
+  margin-top: 18px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.7;
+  box-shadow: 0 10px 22px rgba(0,0,0,.10);
+}
+[data-theme="light"] .summary{
+  background: rgba(255,255,255,.85);
+}
 
     .side{
       border:1px solid var(--line);
@@ -379,7 +387,7 @@
     <main class="card">
       <section class="hero">
         <div>
-          <h1>Fullstack Java<br/>con foco en APIs</h1>
+          <h1>Fullstack Java<br/></h1>
           <div class="subtitle">
             Backend Java (Spring Boot / WebFlux) · API Gateway · Seguridad (OAuth2, mTLS) · Frontend (AngularJS / JS)
           </div>
@@ -410,12 +418,7 @@
             </div>
           </div>
 
-          <div class="summary">
-            Desarrolladora <strong>fullstack</strong> con fuerte enfoque en <strong>backend Java</strong>, trabajando en
-            entornos corporativos con arquitecturas basadas en <strong>APIs</strong> y <strong>pasarelas (API Gateway)</strong>.
-            Experiencia también en <strong>frontend</strong> con <strong>AngularJS</strong> y <strong>JavaScript</strong>.
-          </div>
-        </div>
+         
 
         <aside class="side" aria-label="Resumen rápido">
           <h3>Resumen rápido</h3>
@@ -453,6 +456,13 @@
           </div>
         </aside>
       </section>
+
+       <div class="summary">
+            Desarrolladora <strong>fullstack</strong> con fuerte enfoque en <strong>backend Java</strong>, trabajando en
+            entornos corporativos con arquitecturas basadas en <strong>APIs</strong> y <strong>pasarelas (API Gateway)</strong>.
+            Experiencia también en <strong>frontend</strong> con <strong>AngularJS</strong> y <strong>JavaScript</strong>.
+          </div>
+        </div>
 
       <section class="section">
         <h2 class="section-title">
